@@ -797,18 +797,61 @@
   </div>
 
   <footer>
-    <div class="footer-top">
-      <div><div class="footer-brand-name">Premier<span>.</span>Cuts</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
-      <div><div class="footer-col-title">Navigation</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li></ul></div>
-      <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr</a></li></ul></div>
-      <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li></ul></div>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">Premier<span>.</span>Cuts</div>
+      <div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div>
     </div>
-    <div class="footer-bottom">
-      <span class="footer-copy">© 2025 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <ul class="footer-col-links">
+        <li><a href="#home" data-page="home">Home</a></li>
+        <li><a href="#about" data-page="about">About</a></li>
+        <li><a href="#services" data-page="services">Services</a></li>
+        <li><a href="#gallery" data-page="gallery">Gallery</a></li>
+      </ul>
     </div>
-  </footer>
-</div>
+
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <ul class="footer-col-links">
+        <li><a href="tel:+14235670424">(423) 567-0424</a></li>
+        <li><a href="#">455 Chickamauga Dr</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Hours</div>
+      <ul class="footer-col-links">
+        <li><a href="#">Tue–Fri: 10am–6pm</a></li>
+        <li><a href="#">Saturday: 9am–4pm</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© <span id="year"></span> Premier Cuts Barbershop. Dayton, Tennessee.</span>
+
+    <div style="display:flex; align-items:center; gap:20px;">
+      <div class="footer-legal">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+
+      <a class="footer-credit" 
+         href="https://www.gshyamvp.com" 
+         target="_blank" 
+         rel="noopener">
+         Website by GVP
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 
 <script src="js/main.js"></script>
 </body>
