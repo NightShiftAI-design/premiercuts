@@ -5,75 +5,121 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Premier Cuts Barbershop — Dayton, Tennessee's premier grooming destination. Precision fades, beard trims, and elevated barbershop experiences by Carlos and Kanaan.">
 <meta name="keywords" content="barbershop Dayton TN, haircut Dayton Tennessee, Premier Cuts, fade haircut, beard trim, Rhea County barber">
-<meta name="author" content="Premier Cuts Barbershop">
 <meta property="og:title" content="Premier Cuts Barbershop | Dayton, Tennessee">
 <meta property="og:description" content="Precision Cuts. Elevated Experience. Dayton's premier grooming studio.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://premiercutsdayton.com">
 <meta property="og:image" content="https://premiercutsdayton.com/images/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Premier Cuts Barbershop | Dayton, TN">
-<meta name="twitter:description" content="Precision Cuts. Elevated Experience.">
-<meta name="theme-color" content="#0a0a0a">
+<meta name="theme-color" content="#080808">
 <link rel="canonical" href="https://premiercutsdayton.com">
 <title>Premier Cuts Barbershop | Dayton, Tennessee</title>
-<link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<!-- Cursor -->
 <div class="cursor"></div>
 <div class="cursor-ring"></div>
 
+<!-- ── NAV ─────────────────────────────── -->
 <nav id="mainNav">
-  <a href="#home" class="nav-logo" data-page="home">Premier<span>.</span></a>
+  <a href="#home" class="nav-logo" data-page="home">PREMIER<span class="dot">.</span></a>
   <ul class="nav-links">
-    <li><a href="#about" data-page="about">About</a></li>
+    <li><a href="#about"    data-page="about">About</a></li>
     <li><a href="#services" data-page="services">Services</a></li>
-    <li><a href="#gallery" data-page="gallery">Gallery</a></li>
-    <li><a href="#contact" data-page="contact">Contact</a></li>
+    <li><a href="#gallery"  data-page="gallery">Gallery</a></li>
+    <li><a href="#contact"  data-page="contact">Contact</a></li>
     <li><a href="#book" class="nav-book" data-page="book">Book Now</a></li>
   </ul>
-  <button class="hamburger" id="hamburger" aria-label="Open menu">
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
     <span></span><span></span><span></span>
   </button>
 </nav>
 
+<!-- ── MOBILE MENU ───────────────────── -->
 <div class="mobile-menu" id="mobileMenu">
-  <a href="#home" data-page="home">Home</a>
-  <a href="#about" data-page="about">About</a>
+  <a href="#home"    data-page="home">Home</a>
+  <a href="#about"   data-page="about">About</a>
   <a href="#services" data-page="services">Services</a>
   <a href="#gallery" data-page="gallery">Gallery</a>
-  <a href="#book" data-page="book">Book Now</a>
+  <a href="#book"    data-page="book">Book Now</a>
   <a href="#contact" data-page="contact">Contact</a>
+  <span class="mobile-menu-sub">(423) 567-0424</span>
 </div>
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      HOME PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="home" class="page">
 
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-bg-text">PREMIER</div>
+    <div class="hero-bg-word">PREMIER</div>
 
     <div class="hero-content">
       <div class="hero-eyebrow">
         <div class="hero-eyebrow-line"></div>
         <span class="hero-eyebrow-text">Dayton, Tennessee — Est. 2026</span>
       </div>
+
       <h1 class="hero-title">Precision <em>Cuts.</em></h1>
-      <p class="hero-title-second">Elevated<br>Experience.</p>
-      <p class="hero-sub">Where master craftsmanship meets modern grooming. The premium barbershop Dayton has been waiting for.</p>
+      <p class="hero-title-sub">Elevated<br>Experience.</p>
+
+      <p class="hero-desc">Dayton's only premium grooming studio. Where every detail is intentional and no client leaves until the cut is exactly right.</p>
+
       <div class="hero-actions">
         <a href="#book" class="btn-primary" data-page="book">
-          Book Appointment
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Book an Appointment
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
-        <a href="#services" class="btn-ghost" data-page="services">
-          View Services
-        </a>
+        <a href="#services" class="btn-ghost" data-page="services">View Services</a>
+      </div>
+    </div>
+
+    <!-- Trust bar -->
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <div>
+          <div class="hero-trust-label">Rated</div>
+          <div class="hero-trust-value">5.0 on Google</div>
+        </div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div>
+          <div class="hero-trust-label">Team</div>
+          <div class="hero-trust-value">Carlos &amp; Kanaan</div>
+        </div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        </div>
+        <div>
+          <div class="hero-trust-label">Hours</div>
+          <div class="hero-trust-value">Tue–Fri &amp; Saturday</div>
+        </div>
+      </div>
+      <div class="hero-trust-div"></div>
+      <div class="hero-trust-item">
+        <div class="hero-trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="hero-trust-label">Standard</div>
+          <div class="hero-trust-value">Walk-ins Welcome</div>
+        </div>
       </div>
     </div>
 
@@ -81,14 +127,31 @@
       <div class="hero-scroll-line"></div>
       <span class="hero-scroll-text">Scroll</span>
     </div>
-
-    <div class="hero-badge">
-      <div class="hero-badge-inner">PREMIER<br>—<br>CUTS<br>—<br>DAYTON</div>
-    </div>
   </section>
+
+  <!-- PROOF STRIP -->
+  <div class="proof-strip">
+    <div class="proof-item fade-in">
+      <div class="proof-num">5<em>★</em></div>
+      <div class="proof-desc">Average Google Rating</div>
+    </div>
+    <div class="proof-item fade-in stagger-1">
+      <div class="proof-num"><em>2</em></div>
+      <div class="proof-desc">Master Barbers on Staff</div>
+    </div>
+    <div class="proof-item fade-in stagger-2">
+      <div class="proof-num">$<em>0</em></div>
+      <div class="proof-desc">Hidden Fees — Ever</div>
+    </div>
+    <div class="proof-item fade-in stagger-3">
+      <div class="proof-num">100<em>%</em></div>
+      <div class="proof-desc">Satisfaction Guaranteed</div>
+    </div>
+  </div>
 
   <div class="divider"></div>
 
+  <!-- TEAM -->
   <section class="team-section">
     <div class="label fade-in">
       <div class="label-line"></div>
@@ -97,7 +160,7 @@
     <h2 class="section-title fade-in">Meet the <em>Artists</em><br>Behind the <strong>Chair</strong></h2>
 
     <div class="team-grid">
-      <div class="team-card">
+      <div class="team-card fade-in">
         <div class="team-card-img">
           <div class="team-card-img-placeholder"><span>C</span></div>
         </div>
@@ -105,10 +168,11 @@
         <div class="team-card-content">
           <p class="team-card-role">Owner &amp; Master Barber</p>
           <h3 class="team-card-name">Carlos</h3>
-          <p class="team-card-bio">With years of precision work and an unwavering eye for detail, Carlos built Premier Cuts from a vision: that Dayton deserved a barbershop experience without compromise. Every cut is a statement.</p>
+          <p class="team-card-bio">Carlos built Premier Cuts from a simple conviction: Dayton deserved better. Every cut is a standard he refuses to drop — precision, patience, and zero compromise from the first consultation to the final edge.</p>
         </div>
+        <div class="team-card-bar"></div>
       </div>
-      <div class="team-card">
+      <div class="team-card fade-in stagger-2">
         <div class="team-card-img">
           <div class="team-card-img-placeholder"><span>K</span></div>
         </div>
@@ -116,81 +180,118 @@
         <div class="team-card-content">
           <p class="team-card-role">Senior Barber</p>
           <h3 class="team-card-name">Kanaan</h3>
-          <p class="team-card-bio">Kanaan brings a meticulous artistry to every appointment — from razor-sharp fades to precise beard sculpting. His clients don't leave until the cut is exactly right. Every. Single. Time.</p>
+          <p class="team-card-bio">Kanaan's clients don't leave until the cut is exactly right — every single time. Known for razor-sharp fades and sculpted beard work that make a real difference. He listens first, then executes.</p>
         </div>
+        <div class="team-card-bar"></div>
       </div>
     </div>
   </section>
 
+  <!-- GALLERY PREVIEW -->
   <section class="gallery-section section-sm">
-    <div class="label fade-in">
-      <div class="label-line"></div>
-      <span class="label-text">Featured Work</span>
-    </div>
-    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px">
-      <h2 class="section-title fade-in">The <em>Work</em><br>Speaks for Itself</h2>
-      <a href="#gallery" class="btn-outline fade-in" data-page="gallery">View Full Gallery</a>
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:56px">
+      <div>
+        <div class="label fade-in"><div class="label-line"></div><span class="label-text">Featured Work</span></div>
+        <h2 class="section-title fade-in">The <em>Work</em><br>Speaks for Itself</h2>
+      </div>
+      <a href="#gallery" class="btn-outline fade-in" data-page="gallery">Full Gallery</a>
     </div>
 
-    <div class="gallery-grid" style="margin-top:60px">
+    <div class="gallery-grid">
       <div class="gallery-item">
-        <div class="gallery-item-placeholder"><span>✦</span></div>
+        <div class="gallery-item-inner"><span class="glyph">✦</span></div>
         <div class="gallery-item-overlay"><span class="gallery-item-label">Skin Fade</span></div>
       </div>
       <div class="gallery-item gallery-item-large">
-        <div class="gallery-item-placeholder"><span>✦</span></div>
+        <div class="gallery-item-inner"><span class="glyph">✦</span></div>
         <div class="gallery-item-overlay"><span class="gallery-item-label">Full Groom</span></div>
       </div>
       <div class="gallery-item gallery-item-large">
-        <div class="gallery-item-placeholder"><span>✦</span></div>
+        <div class="gallery-item-inner"><span class="glyph">✦</span></div>
         <div class="gallery-item-overlay"><span class="gallery-item-label">Taper &amp; Beard</span></div>
       </div>
       <div class="gallery-item">
-        <div class="gallery-item-placeholder"><span>✦</span></div>
+        <div class="gallery-item-inner"><span class="glyph">✦</span></div>
         <div class="gallery-item-overlay"><span class="gallery-item-label">Classic Cut</span></div>
       </div>
     </div>
   </section>
 
-  <section class="features-section section">
-    <div class="label fade-in">
-      <div class="label-line"></div>
-      <span class="label-text">Why Premier Cuts</span>
-    </div>
+  <!-- WHY PREMIER CUTS -->
+  <section class="section" style="background:var(--black)">
+    <div class="label fade-in"><div class="label-line"></div><span class="label-text">Why Premier Cuts</span></div>
     <h2 class="section-title fade-in" style="margin-bottom:0">What Sets Us <em>Apart</em></h2>
 
     <div class="features-grid">
       <div class="feature-card fade-in">
         <div class="feature-num">01</div>
         <h3 class="feature-title">Precision</h3>
-        <p class="feature-desc">Every line, every fade, every detail executed to exacting standards. We don't rush perfection.</p>
+        <p class="feature-desc">Every line, every fade, every edge executed to an exacting standard. We don't rush — and we don't release you until it's right.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:0.1s">
+      <div class="feature-card fade-in stagger-1">
         <div class="feature-num">02</div>
         <h3 class="feature-title">Atmosphere</h3>
-        <p class="feature-desc">A clean, modern environment designed for comfort. This is your time — we make it count.</p>
+        <p class="feature-desc">Clean. Modern. Focused entirely on you. No distractions, no chaos — just a shop designed to make you feel taken care of.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:0.2s">
+      <div class="feature-card fade-in stagger-2">
         <div class="feature-num">03</div>
-        <h3 class="feature-title">Professionalism</h3>
-        <p class="feature-desc">Punctual, respectful, and completely focused on you. From first booking to final look.</p>
+        <h3 class="feature-title">Consistency</h3>
+        <p class="feature-desc">Your cut is remembered. Every visit delivers the same excellent result — or better. No explaining yourself from scratch each time.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:0.3s">
+      <div class="feature-card fade-in stagger-3">
         <div class="feature-num">04</div>
-        <h3 class="feature-title">Modern Booking</h3>
-        <p class="feature-desc">Appointment scheduling built for your life. Book online, show up, walk out sharp.</p>
+        <h3 class="feature-title">Easy Booking</h3>
+        <p class="feature-desc">Book online in under two minutes. Choose your barber, pick your time, confirm. Walk-ins always welcome too.</p>
       </div>
     </div>
   </section>
 
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section section">
+    <div class="label fade-in"><div class="label-line"></div><span class="label-text">Client Words</span></div>
+    <h2 class="section-title fade-in">What Clients <em>Say</em></h2>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-in">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-text">"Best fade I've ever gotten. Carlos took his time and made sure every detail was perfect. I don't go anywhere else."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Marcus T.</span>
+          <span class="testimonial-meta">Regular client · Dayton, TN</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in stagger-1">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-text">"Kanaan is meticulous. My beard has never looked this clean. This shop has a completely different feel from every other barbershop around."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Jordan R.</span>
+          <span class="testimonial-meta">Google Review · 5 stars</span>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in stagger-2">
+        <div class="testimonial-stars">
+          <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+        </div>
+        <p class="testimonial-text">"Drove 30 minutes because a friend recommended them. Completely worth it. This is the real deal — professional, clean, and genuinely excellent."</p>
+        <div class="testimonial-author">
+          <span class="testimonial-name">Derek M.</span>
+          <span class="testimonial-meta">New client · Cleveland, TN</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP / LOCATION -->
   <section class="map-section">
     <div class="map-wrapper">
       <div class="map-info">
-        <div class="label fade-in">
-          <div class="label-line"></div>
-          <span class="label-text">Find Us</span>
-        </div>
-        <h2 class="section-title fade-in" style="font-size:clamp(36px,4vw,60px)">Located in the<br>Heart of <em>Dayton</em></h2>
+        <div class="label fade-in"><div class="label-line"></div><span class="label-text">Find Us</span></div>
+        <h2 class="section-title fade-in" style="font-size:clamp(34px,3.8vw,56px)">Located in the<br>Heart of <em>Dayton</em></h2>
+
         <div class="map-detail fade-in">
           <div class="map-detail-item">
             <div class="map-detail-icon">
@@ -207,7 +308,7 @@
             </div>
             <div>
               <div class="map-detail-label">Phone</div>
-              <div class="map-detail-value"><a href="tel:+14235670424" style="color:inherit">+1 (423) 567-0424</a></div>
+              <div class="map-detail-value"><a href="tel:+14235670424" style="color:inherit">(423) 567-0424</a></div>
             </div>
           </div>
           <div class="map-detail-item">
@@ -216,14 +317,15 @@
             </div>
             <div>
               <div class="map-detail-label">Hours</div>
-              <div class="map-detail-value">Tue – Fri &nbsp;&nbsp;10:00 AM – 6:00 PM<br>Saturday &nbsp;&nbsp;9:00 AM – 4:00 PM</div>
+              <div class="map-detail-value">Tue – Fri &nbsp; 10 AM – 6 PM<br>Saturday &nbsp; 9 AM – 4 PM</div>
             </div>
           </div>
         </div>
-        <div style="margin-top:40px">
-          <a href="#book" class="btn-primary" data-page="book" style="display:inline-flex">
+
+        <div style="margin-top:40px" class="fade-in">
+          <a href="#book" class="btn-primary" data-page="book">
             Book Your Appointment
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
       </div>
@@ -238,27 +340,29 @@
     </div>
   </section>
 
-  <section style="background:var(--charcoal);padding:100px 60px;text-align:center;">
-    <div class="label fade-in" style="justify-content:center;">
+  <!-- FINAL CTA -->
+  <section class="cta-banner">
+    <div class="label fade-in" style="justify-content:center">
       <div class="label-line"></div>
       <span class="label-text">Ready?</span>
       <div class="label-line"></div>
     </div>
-    <h2 class="section-title fade-in" style="margin-bottom:20px">Time to Look<br>Your <em>Best.</em></h2>
-    <p class="fade-in" style="font-size:15px;color:var(--light-muted);max-width:440px;margin:0 auto 48px;font-weight:300;line-height:1.7">Walk-ins welcome. Appointments preferred. Either way, you leave looking sharp.</p>
-    <div style="display:flex;gap:20px;justify-content:center;flex-wrap:wrap" class="fade-in">
+    <h2 class="section-title fade-in">Time to Look<br>Your <em>Best.</em></h2>
+    <p class="fade-in" style="font-size:15px;color:var(--light-muted);max-width:400px;margin:16px auto 48px;font-weight:300;line-height:1.75">Walk-ins welcome. Appointments preferred. Either way, you leave looking sharp and feeling confident.</p>
+    <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap" class="fade-in stagger-1">
       <a href="#book" class="btn-primary" data-page="book">
         Book Now
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
-      <a href="tel:+14235670424" class="btn-outline">Call Us</a>
+      <a href="tel:+14235670424" class="btn-outline">Call (423) 567-0424</a>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
       <div>
-        <div class="footer-brand-name">Premier<span>.</span>Cuts</div>
+        <div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div>
         <div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div>
         <div class="footer-social">
           <a href="#" class="footer-social-link" aria-label="Instagram">
@@ -267,85 +371,83 @@
           <a href="#" class="footer-social-link" aria-label="Facebook">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
           </a>
-          <a href="#" class="footer-social-link" aria-label="Google">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+          <a href="#" class="footer-social-link" aria-label="Google Reviews">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
           </a>
         </div>
       </div>
       <div>
-        <div class="footer-col-title">Navigation</div>
+        <div class="footer-col-title">Navigate</div>
         <ul class="footer-col-links">
-          <li><a href="#home" data-page="home">Home</a></li>
-          <li><a href="#about" data-page="about">About</a></li>
+          <li><a href="#home"     data-page="home">Home</a></li>
+          <li><a href="#about"    data-page="about">About</a></li>
           <li><a href="#services" data-page="services">Services</a></li>
-          <li><a href="#gallery" data-page="gallery">Gallery</a></li>
+          <li><a href="#gallery"  data-page="gallery">Gallery</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Services</div>
         <ul class="footer-col-links">
-          <li><a href="#services" data-page="services">Haircut</a></li>
-          <li><a href="#services" data-page="services">Skin Fade</a></li>
-          <li><a href="#services" data-page="services">Beard Trim</a></li>
-          <li><a href="#services" data-page="services">Full Groom</a></li>
+          <li><a href="#services" data-page="services">Haircut — from $25</a></li>
+          <li><a href="#services" data-page="services">Skin Fade — from $30</a></li>
+          <li><a href="#services" data-page="services">Beard Trim — from $20</a></li>
+          <li><a href="#services" data-page="services">Full Groom — from $55</a></li>
         </ul>
       </div>
       <div>
         <div class="footer-col-title">Visit Us</div>
         <ul class="footer-col-links">
           <li><a href="tel:+14235670424">(423) 567-0424</a></li>
-          <li><a href="https://maps.google.com" target="_blank" rel="noopener">455 Chickamauga Dr<br>Dayton, TN 37321</a></li>
+          <li><a href="https://maps.google.com/?q=455+Chickamauga+Dr+Dayton+TN+37321" target="_blank" rel="noopener">455 Chickamauga Dr<br>Dayton, TN 37321</a></li>
           <li><a href="#book" data-page="book">Book Appointment</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee. All rights reserved.</span>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
       <div class="footer-legal">
         <a href="privacy.html">Privacy</a>
         <a href="terms.html">Terms</a>
-        <a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a>
+        <a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a>
       </div>
     </div>
   </footer>
 
-</div>
+</div><!-- /home -->
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      ABOUT PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="about" class="page">
 
-  <section class="services-hero" style="background:var(--black)">
-    <div class="label fade-in">
-      <div class="label-line"></div>
-      <span class="label-text">Our Story</span>
-    </div>
-    <h1 class="section-title fade-in">More Than a<br>Haircut — It's a<br><em>Standard.</em></h1>
+  <section class="page-hero" style="background:var(--black)">
+    <div class="label fade-in"><div class="label-line"></div><span class="label-text">Our Story</span></div>
+    <h1 class="section-title fade-in">More Than a Cut —<br>It's a <em>Standard.</em></h1>
+    <p class="fade-in" style="font-size:16px;font-weight:300;color:var(--light-muted);margin-top:20px;max-width:520px;line-height:1.75">A barbershop built on craft, consistency, and a refusal to be ordinary. This is what Premier Cuts is about.</p>
   </section>
 
-  <section style="background:var(--charcoal);padding:100px 60px;">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:100px;align-items:center" class="about-intro-grid">
+  <section style="background:var(--charcoal);padding:var(--pad-section) var(--pad-x)">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(48px,8vw,110px);align-items:center" class="about-intro-grid">
       <div class="slide-left">
         <div class="label"><div class="label-line"></div><span class="label-text">The Philosophy</span></div>
-        <h2 class="section-title" style="font-size:clamp(36px,4vw,64px);margin-bottom:32px">Built on <em>Craft.</em><br>Driven by <strong>Detail.</strong></h2>
-        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8;margin-bottom:20px">Premier Cuts was founded on a single conviction: the people of Dayton, Tennessee deserve a barbershop that doesn't cut corners. Where every visit is an experience, not a transaction.</p>
-        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8;margin-bottom:20px">Carlos built this shop from the chair up — with modern equipment, a zero-compromise approach to cleanliness, and a team trained to listen as well as they cut.</p>
-        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8">The result is a barbershop that clients drive across the county for. Not because they have to. Because nothing else compares.</p>
+        <h2 class="section-title" style="font-size:clamp(34px,4vw,62px);margin-bottom:30px">Built on <em>Craft.</em><br>Driven by <strong>Detail.</strong></h2>
+        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8;margin-bottom:18px">Premier Cuts was founded on one conviction: the people of Dayton deserve a barbershop that doesn't cut corners. Where every visit is an experience, not a transaction.</p>
+        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8;margin-bottom:18px">Carlos built this shop from the chair up — with modern equipment, a zero-tolerance approach to cleanliness, and a team trained to listen as carefully as they cut.</p>
+        <p style="font-size:15px;font-weight:300;color:var(--light-muted);line-height:1.8">The result is a shop clients drive across the county for. Not because they have to — because nothing else compares.</p>
         <div class="divider-gold"></div>
-        <a href="#book" class="btn-primary" data-page="book" style="display:inline-flex;margin-top:8px">
+        <a href="#book" class="btn-primary" data-page="book">
           Book With Us
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </a>
       </div>
       <div class="slide-right">
         <div style="background:var(--dark);aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden">
-          <span style="font-family:var(--font-display);font-size:200px;font-weight:300;color:rgba(255,255,255,0.03)">P</span>
-          <div style="position:absolute;bottom:0;left:0;right:0;padding:40px;background:linear-gradient(to top,var(--dark),transparent)">
-            <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase">Premier Cuts</div>
-            <div style="font-family:var(--font-display);font-size:28px;font-weight:300;color:var(--white);margin-top:6px">Dayton, Tennessee</div>
+          <span style="font-family:var(--font-display);font-size:200px;font-weight:300;color:rgba(192,154,90,0.05)">P</span>
+          <div style="position:absolute;bottom:0;left:0;right:0;padding:36px;background:linear-gradient(to top,var(--dark),transparent)">
+            <div style="font-family:var(--font-ui);font-size:10px;letter-spacing:0.3em;color:var(--gold);text-transform:uppercase">Premier Cuts</div>
+            <div style="font-family:var(--font-display);font-size:26px;font-weight:300;color:var(--white);margin-top:6px">Dayton, Tennessee</div>
           </div>
-          <div style="position:absolute;top:24px;right:24px;border:1px solid var(--gold);padding:12px 20px;">
+          <div style="position:absolute;top:20px;right:20px;border:1px solid var(--gold);padding:10px 18px">
             <div style="font-family:var(--font-ui);font-size:10px;letter-spacing:0.2em;color:var(--gold);text-transform:uppercase">5.0 ★ Google</div>
           </div>
         </div>
@@ -353,133 +455,108 @@
     </div>
   </section>
 
-  <style>
-    @media (max-width:900px) {
-      .about-intro-grid { grid-template-columns: 1fr !important; gap: 60px !important; }
-    }
-  </style>
-
+  <!-- Team -->
   <section class="team-section">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">The Barbers</span></div>
     <h2 class="section-title fade-in">The <em>Artists</em><br>Behind Every Cut</h2>
-
     <div class="team-grid">
-      <div class="team-card">
-        <div class="team-card-img">
-          <div class="team-card-img-placeholder"><span>C</span></div>
-        </div>
+      <div class="team-card fade-in">
+        <div class="team-card-img"><div class="team-card-img-placeholder"><span>C</span></div></div>
         <div class="team-card-overlay"></div>
         <div class="team-card-content">
           <p class="team-card-role">Owner &amp; Master Barber</p>
           <h3 class="team-card-name">Carlos</h3>
-          <p class="team-card-bio">Carlos founded Premier Cuts with a vision that Dayton deserved more — more care, more craft, more consistency. His precision and patience with every client is legendary among regulars. He doesn't just cut hair; he builds trust one appointment at a time.</p>
+          <p class="team-card-bio">Carlos founded Premier Cuts with a vision Dayton deserved more — more care, more craft, more consistency. His precision with every client has built a reputation that speaks for itself. He doesn't just cut hair; he builds trust, one appointment at a time.</p>
         </div>
+        <div class="team-card-bar"></div>
       </div>
-      <div class="team-card">
-        <div class="team-card-img">
-          <div class="team-card-img-placeholder"><span>K</span></div>
-        </div>
+      <div class="team-card fade-in stagger-2">
+        <div class="team-card-img"><div class="team-card-img-placeholder"><span>K</span></div></div>
         <div class="team-card-overlay"></div>
         <div class="team-card-content">
           <p class="team-card-role">Senior Barber</p>
           <h3 class="team-card-name">Kanaan</h3>
-          <p class="team-card-bio">Kanaan's attention to detail is extraordinary. He asks questions, listens, and doesn't lift the cape until the cut is exactly right. Known for his precise fades and sculpted beard work, Kanaan has built one of the most loyal client rosters in the shop.</p>
+          <p class="team-card-bio">Kanaan's attention to detail is extraordinary. He asks the right questions, listens before he cuts, and doesn't stop until the result is exactly right. Known for precise fades and sculpted beard work that make the difference between a good cut and a great one.</p>
         </div>
+        <div class="team-card-bar"></div>
       </div>
     </div>
   </section>
 
-  <section class="features-section section">
+  <!-- Commitments -->
+  <section class="section" style="background:var(--black)">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">Our Commitments</span></div>
     <h2 class="section-title fade-in">What We Promise<br><em>Every Visit</em></h2>
-    <div class="features-grid" style="margin-top:60px">
+    <div class="features-grid" style="margin-top:56px">
       <div class="feature-card fade-in">
         <div class="feature-num">I</div>
         <h3 class="feature-title">Sanitation</h3>
-        <p class="feature-desc">Hospital-level cleanliness standards. Fresh linens, sterilized tools, and a spotless environment — always.</p>
+        <p class="feature-desc">Fresh linens, sterilized tools, spotless environment — every single time, no exceptions.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:.1s">
+      <div class="feature-card fade-in stagger-1">
         <div class="feature-num">II</div>
         <h3 class="feature-title">Consistency</h3>
-        <p class="feature-desc">Your cut is documented. Every time you return, you get the same excellent result — or better.</p>
+        <p class="feature-desc">Your preferred cut is remembered. Every return visit delivers the same excellent result — or better.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:.2s">
+      <div class="feature-card fade-in stagger-2">
         <div class="feature-num">III</div>
         <h3 class="feature-title">Respect</h3>
-        <p class="feature-desc">Your time is valuable. We run on schedule, communicate clearly, and never rush the work.</p>
+        <p class="feature-desc">Your time matters. We run on schedule, communicate clearly, and never rush the work.</p>
       </div>
-      <div class="feature-card fade-in" style="transition-delay:.3s">
+      <div class="feature-card fade-in stagger-3">
         <div class="feature-num">IV</div>
         <h3 class="feature-title">Satisfaction</h3>
-        <p class="feature-desc">If it's not right, we make it right. No exceptions. Every client walks out confident.</p>
+        <p class="feature-desc">If it's not exactly right, we make it right — before you leave. No exceptions, no excuses.</p>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="footer-top">
-      <div>
-        <div class="footer-brand-name">Premier<span>.</span>Cuts</div>
-        <div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div>
-        <div class="footer-social">
-          <a href="#" class="footer-social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
-          <a href="#" class="footer-social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-        </div>
-      </div>
-      <div>
-        <div class="footer-col-title">Navigation</div>
-        <ul class="footer-col-links">
-          <li><a href="#home" data-page="home">Home</a></li>
-          <li><a href="#services" data-page="services">Services</a></li>
-          <li><a href="#gallery" data-page="gallery">Gallery</a></li>
-          <li><a href="#book" data-page="book">Book Now</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Contact</div>
-        <ul class="footer-col-links">
-          <li><a href="tel:+14235670424">(423) 567-0424</a></li>
-          <li><a href="#">455 Chickamauga Dr, Dayton TN</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-col-title">Hours</div>
-        <ul class="footer-col-links">
-          <li><a href="#">Tue–Fri: 10am – 6pm</a></li>
-          <li><a href="#">Saturday: 9am – 4pm</a></li>
-          <li><a href="#" style="color:var(--muted)">Sun–Mon: Closed</a></li>
-        </ul>
-      </div>
+      <div><div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
+      <div><div class="footer-col-title">Navigate</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li><li><a href="#book" data-page="book">Book Now</a></li></ul></div>
+      <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr, Dayton TN</a></li></ul></div>
+      <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li><li><a href="#" style="color:var(--muted)">Sun–Mon: Closed</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a></div>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a></div>
     </div>
   </footer>
-</div>
+</div><!-- /about -->
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      SERVICES PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="services" class="page">
 
-  <section class="services-hero">
+  <section class="page-hero" style="background:var(--charcoal);border-bottom:1px solid var(--border)">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">Pricing &amp; Services</span></div>
-    <h1 class="section-title fade-in">Every Service.<br>Done <em>Right.</em></h1>
-    <p class="fade-in" style="font-size:16px;font-weight:300;color:var(--light-muted);margin-top:24px;max-width:500px;line-height:1.7">Transparent pricing. No surprises. Just clean, precise work from barbers who take pride in every cut.</p>
+    <h1 class="section-title fade-in">Every Service,<br>Done <em>Right.</em></h1>
+    <p class="fade-in" style="font-size:16px;font-weight:300;color:var(--light-muted);margin-top:20px;max-width:480px;line-height:1.75">Transparent pricing. No surprises. Just precise work from barbers who take pride in every single appointment.</p>
   </section>
 
-  <div class="services-list">
+  <!-- Guarantee bar -->
+  <div class="guarantee-bar fade-in">
+    <div class="guarantee-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+    </div>
+    <div class="guarantee-text">
+      <strong>100% Satisfaction Guarantee.</strong> If you're not happy with your cut, we'll make it right before you leave — no charge, no argument. That's the Premier Cuts standard.
+    </div>
+  </div>
 
+  <!-- Services list -->
+  <div class="services-list">
     <div class="service-row fade-in">
       <span class="service-num">01</span>
       <div class="service-info">
         <h2 class="service-name">Classic Haircut</h2>
-        <p class="service-desc">Scissor and/or clipper cut tailored to your style. Includes consultation, shampoo optional.</p>
+        <p class="service-desc">Scissor and/or clipper cut tailored to your style. Includes consultation and blow dry.</p>
       </div>
       <div class="service-right">
         <div class="service-price">$25 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
 
@@ -491,7 +568,7 @@
       </div>
       <div class="service-right">
         <div class="service-price">$30 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
 
@@ -499,11 +576,11 @@
       <span class="service-num">03</span>
       <div class="service-info">
         <h2 class="service-name">Beard Trim &amp; Shape</h2>
-        <p class="service-desc">Sculpted beard work with hot towel, razor edge, and beard oil finish. Standalone or add-on.</p>
+        <p class="service-desc">Sculpted beard work with hot towel, straight razor edge, and beard oil finish. Standalone or add-on.</p>
       </div>
       <div class="service-right">
         <div class="service-price">$20 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
 
@@ -511,23 +588,26 @@
       <span class="service-num">04</span>
       <div class="service-info">
         <h2 class="service-name">Kids Cut</h2>
-        <p class="service-desc">Patient, focused cuts for the little ones. We make it comfortable, fun, and precise.</p>
+        <p class="service-desc">Patient, focused cuts for the little ones. Comfortable, calm, and precise every time.</p>
       </div>
       <div class="service-right">
         <div class="service-price">$20 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
 
-    <div class="service-row fade-in" style="background:var(--charcoal)">
+    <div class="service-row featured fade-in">
       <span class="service-num">05</span>
       <div class="service-info">
-        <h2 class="service-name">Full Service Groom</h2>
-        <p class="service-desc">The complete experience — haircut, fade, beard sculpt, hot towel, and straight razor edge. Our signature service.</p>
+        <h2 class="service-name">
+          Full Service Groom
+          <span class="service-badge">Signature</span>
+        </h2>
+        <p class="service-desc">The complete experience — haircut, fade, beard sculpt, hot towel, and straight razor edge. Our best service.</p>
       </div>
       <div class="service-right">
         <div class="service-price">$55 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
 
@@ -539,56 +619,97 @@
       </div>
       <div class="service-right">
         <div class="service-price">$15 <span>+ up</span></div>
-        <a href="#book" class="btn-outline" data-page="book">Book Now</a>
+        <a href="#book" class="btn-outline" data-page="book">Book</a>
       </div>
     </div>
-
   </div>
 
-  <section style="background:var(--gold);padding:100px 60px;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
-    <div>
-      <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(10,10,10,0.6);margin-bottom:12px">Ready to Book?</div>
-      <h2 style="font-family:var(--font-display);font-size:clamp(36px,5vw,72px);font-weight:300;letter-spacing:-0.02em;color:var(--black);line-height:1">Your best look<br>is one appointment away.</h2>
-    </div>
-    <div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start">
-      <a href="#book" class="btn-primary" data-page="book" style="background:var(--black);color:var(--gold)">
-        Book Appointment
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-      </a>
-      <span style="font-family:var(--font-ui);font-size:12px;letter-spacing:0.2em;text-transform:uppercase;color:rgba(10,10,10,0.55)">✓ Walk-ins also welcome</span>
+  <!-- FAQ -->
+  <section class="section" style="background:var(--charcoal)">
+    <div class="label fade-in"><div class="label-line"></div><span class="label-text">FAQ</span></div>
+    <h2 class="section-title fade-in">Common <em>Questions</em></h2>
+
+    <div class="faq-list fade-in">
+      <div class="faq-item">
+        <div class="faq-question">
+          Do I need an appointment or can I walk in?
+          <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        </div>
+        <div class="faq-answer"><p>Walk-ins are always welcome — we work you in based on availability. That said, booking an appointment guarantees your time slot and barber. We recommend booking online via Booksy or StyleSeat, especially on weekends.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          How long does a typical appointment take?
+          <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        </div>
+        <div class="faq-answer"><p>A standard haircut or fade takes 30–45 minutes. The Full Service Groom runs 60–75 minutes. We never rush — your cut gets the time it deserves.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Are your prices the same for all hair types?
+          <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        </div>
+        <div class="faq-answer"><p>Our listed prices are starting prices. Pricing may vary slightly depending on hair length, texture, or complexity of the service. Your barber will always communicate any adjustments before beginning — no surprises.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What if I'm not happy with my cut?
+          <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        </div>
+        <div class="faq-answer"><p>Tell us before you leave. We stand behind our work completely — if something isn't right, we fix it at no charge. Our satisfaction guarantee is unconditional.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          Do you cut kids' hair?
+          <div class="faq-toggle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg></div>
+        </div>
+        <div class="faq-answer"><p>Absolutely. Kids' cuts start at $20. We're patient and make the experience comfortable — parents are always welcome to stay right beside the chair.</p></div>
+      </div>
     </div>
   </section>
 
-  <section style="padding:80px 60px;background:var(--charcoal)">
-    <p style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);text-align:center">*All prices are starting prices and may vary based on hair length, texture, and service customization. Prices subject to change. Please confirm at booking.</p>
+  <!-- CTA gold bar -->
+  <section style="background:var(--gold);padding:80px var(--pad-x);display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap">
+    <div>
+      <div style="font-family:var(--font-ui);font-size:10px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(8,8,8,0.55);margin-bottom:10px">Ready to Book?</div>
+      <h2 style="font-family:var(--font-display);font-size:clamp(34px,4.5vw,68px);font-weight:300;letter-spacing:-0.02em;color:var(--black);line-height:1.05">Your best look<br>is one appointment away.</h2>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;align-items:flex-start;flex-shrink:0">
+      <a href="#book" class="btn-primary" data-page="book" style="background:var(--black);color:var(--gold)">
+        Book Appointment
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+      <span style="font-family:var(--font-ui);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(8,8,8,0.5)">✓ Walk-ins also welcome</span>
+    </div>
+  </section>
+
+  <section style="padding:24px var(--pad-x);background:var(--charcoal)">
+    <p style="font-family:var(--font-ui);font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted);text-align:center">*All prices are starting prices and may vary based on hair length, texture, and service customization. Prices subject to change.</p>
   </section>
 
   <footer>
     <div class="footer-top">
-      <div>
-        <div class="footer-brand-name">Premier<span>.</span>Cuts</div>
-        <div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div>
-      </div>
-      <div><div class="footer-col-title">Navigation</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li><li><a href="#book" data-page="book">Book Now</a></li></ul></div>
+      <div><div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
+      <div><div class="footer-col-title">Navigate</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li><li><a href="#book" data-page="book">Book Now</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr</a></li></ul></div>
       <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a></div>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a></div>
     </div>
   </footer>
-</div>
+</div><!-- /services -->
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      GALLERY PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="gallery" class="page">
 
-  <section class="gallery-hero">
+  <section class="page-hero" style="background:var(--black)">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">Portfolio</span></div>
     <h1 class="section-title fade-in">The Work<br>Speaks for <em>Itself.</em></h1>
-    <p class="fade-in" style="font-size:15px;font-weight:300;color:var(--light-muted);margin-top:20px;max-width:480px;line-height:1.7">Every photo in this gallery represents a real client, a real result. This is what happens when craft meets consistency.</p>
+    <p class="fade-in" style="font-size:15px;font-weight:300;color:var(--light-muted);margin-top:18px;max-width:460px;line-height:1.75">Every photo in this gallery represents a real client, a real result. This is what happens when craft meets consistency.</p>
   </section>
 
   <div class="gallery-full-grid">
@@ -611,118 +732,118 @@
     <div class="gallery-full-item col-3"><div class="gallery-placeholder"><span class="glyph">✦</span><div class="overlay-text">Beard &amp; Fade</div></div></div>
   </div>
 
-  <section style="background:var(--charcoal);padding:100px 60px;text-align:center">
-    <p style="font-family:var(--font-ui);font-size:12px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:20px">✦ Follow Us</p>
-    <h2 class="section-title fade-in" style="font-size:clamp(32px,4vw,58px)">See More on <em>Instagram</em></h2>
-    <p class="fade-in" style="font-size:15px;color:var(--light-muted);font-weight:300;margin:20px auto 40px;max-width:400px">Fresh cuts posted daily. Follow @PremierCutsDayton for the latest work from Carlos and Kanaan.</p>
+  <section style="background:var(--charcoal);padding:100px var(--pad-x);text-align:center">
+    <p style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.3em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">✦ Follow Us</p>
+    <h2 class="section-title fade-in" style="font-size:clamp(30px,4vw,54px)">See More on <em>Instagram</em></h2>
+    <p class="fade-in" style="font-size:15px;color:var(--light-muted);font-weight:300;margin:16px auto 40px;max-width:380px;line-height:1.75">Fresh cuts posted regularly. Follow along for the latest work from Carlos and Kanaan.</p>
     <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex">
       Follow on Instagram
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
     </a>
   </section>
 
   <footer>
     <div class="footer-top">
-      <div><div class="footer-brand-name">Premier<span>.</span>Cuts</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
-      <div><div class="footer-col-title">Navigation</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#book" data-page="book">Book Now</a></li></ul></div>
+      <div><div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
+      <div><div class="footer-col-title">Navigate</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#book" data-page="book">Book Now</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr</a></li></ul></div>
       <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a></div>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a></div>
     </div>
   </footer>
-</div>
+</div><!-- /gallery -->
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      BOOK PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="book" class="page">
 
-  <section class="book-hero" style="background:var(--black)">
+  <section class="page-hero" style="background:var(--black)">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">Appointments</span></div>
     <h1 class="section-title fade-in">Book Your<br><em>Appointment.</em></h1>
-    <p class="fade-in" style="font-size:16px;font-weight:300;color:var(--light-muted);margin-top:24px;max-width:480px;line-height:1.7">Choose your preferred booking platform below, or simply call us. Walk-ins are always welcome — but appointments are guaranteed your time.</p>
+    <p class="fade-in" style="font-size:16px;font-weight:300;color:var(--light-muted);margin-top:20px;max-width:480px;line-height:1.75">Choose your platform below or call us directly. Walk-ins are always welcome — but an appointment guarantees your time and barber.</p>
   </section>
 
   <div class="book-grid">
     <div class="book-option fade-in">
-      <div class="book-option-logo">BOOKSY<span>.</span></div>
-      <p class="book-option-desc">Book directly through Booksy — select your barber, choose a time, and confirm your appointment in minutes. Real-time availability.</p>
-      <a href="https://booksy.com" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex">
+      <div class="book-option-platform">BOOKSY<span class="accent">.</span></div>
+      <p class="book-option-desc">Select your barber, pick a time, and confirm in minutes. Real-time availability, instant booking confirmation.</p>
+      <a href="https://booksy.com" target="_blank" rel="noopener" class="btn-primary">
         Book on Booksy
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
       </a>
-      <p style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-top:4px">Recommended for first-time clients</p>
+      <p class="book-option-sub">Recommended for new clients</p>
     </div>
-    <div class="book-option fade-in" style="transition-delay:.15s">
-      <div class="book-option-logo">STYLE<span>SEAT</span></div>
-      <p class="book-option-desc">Already a StyleSeat user? Book through your existing account. Manage your upcoming appointments and view your cut history.</p>
-      <a href="https://styleseat.com" target="_blank" rel="noopener" class="btn-primary" style="display:inline-flex">
+    <div class="book-option fade-in stagger-1">
+      <div class="book-option-platform">STYLE<span class="accent">SEAT</span></div>
+      <p class="book-option-desc">Already a StyleSeat user? Book through your existing account. View your appointment history and manage upcoming visits.</p>
+      <a href="https://styleseat.com" target="_blank" rel="noopener" class="btn-primary">
         Book on StyleSeat
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
       </a>
-      <p style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted);margin-top:4px">Great for returning clients</p>
+      <p class="book-option-sub">Great for returning clients</p>
     </div>
   </div>
 
   <div class="walkin-banner">
     <div>
       <div class="walkin-text">Walk-Ins<br>Welcome.</div>
-      <p class="walkin-sub">No appointment? No problem. Stop by during business hours and we'll work you in.</p>
+      <p class="walkin-sub">No appointment? No problem. Stop by during business hours and we'll get you in.</p>
     </div>
-    <div style="display:flex;flex-direction:column;gap:16px;align-items:flex-start;flex-shrink:0">
-      <a href="tel:+14235670424" style="display:inline-flex;align-items:center;gap:12px;font-family:var(--font-ui);font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;background:var(--black);color:var(--gold);padding:18px 36px;transition:opacity 0.2s">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.59 1.37h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.1 6.1l1.92-1.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <div style="display:flex;flex-direction:column;gap:20px;align-items:flex-start;flex-shrink:0">
+      <a href="tel:+14235670424" style="display:inline-flex;align-items:center;gap:12px;font-family:var(--font-ui);font-size:12px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;background:var(--black);color:var(--gold);padding:18px 32px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.53 2 2 0 0 1 3.59 1.37h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9a16 16 0 0 0 6.1 6.1l1.92-1.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (423) 567-0424
       </a>
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:4px 24px;font-family:var(--font-ui)">
-        <span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(10,10,10,0.6)">Tue–Fri</span>
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:4px 20px;font-family:var(--font-ui)">
+        <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(8,8,8,0.55)">Tue–Fri</span>
         <span style="font-size:12px;color:var(--black)">10:00 AM – 6:00 PM</span>
-        <span style="font-size:12px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(10,10,10,0.6)">Saturday</span>
+        <span style="font-size:11px;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:rgba(8,8,8,0.55)">Saturday</span>
         <span style="font-size:12px;color:var(--black)">9:00 AM – 4:00 PM</span>
       </div>
     </div>
   </div>
 
-  <section style="background:var(--charcoal);padding:80px 60px">
+  <section style="background:var(--charcoal);padding:72px var(--pad-x)">
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px">
-      <div style="background:var(--dark);padding:48px 40px">
-        <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Location</div>
-        <div style="font-family:var(--font-display);font-size:22px;font-weight:300;color:var(--white);line-height:1.4">455 Chickamauga Dr<br>Dayton, TN 37321</div>
+      <div style="background:var(--dark);padding:44px 40px">
+        <div class="contact-detail-title">Location</div>
+        <div class="contact-detail-value" style="font-size:18px">455 Chickamauga Dr<br>Dayton, TN 37321</div>
       </div>
-      <div style="background:var(--dark);padding:48px 40px">
-        <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Phone</div>
-        <div style="font-family:var(--font-display);font-size:22px;font-weight:300;color:var(--white)"><a href="tel:+14235670424">(423) 567-0424</a></div>
+      <div style="background:var(--dark);padding:44px 40px">
+        <div class="contact-detail-title">Phone</div>
+        <div class="contact-detail-value" style="font-size:18px"><a href="tel:+14235670424">(423) 567-0424</a></div>
       </div>
-      <div style="background:var(--dark);padding:48px 40px">
-        <div style="font-family:var(--font-ui);font-size:11px;letter-spacing:0.25em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Hours</div>
-        <div style="font-family:var(--font-display);font-size:18px;font-weight:300;color:var(--white);line-height:1.7">Tue–Fri &nbsp;10am – 6pm<br>Saturday &nbsp;9am – 4pm</div>
+      <div style="background:var(--dark);padding:44px 40px">
+        <div class="contact-detail-title">Hours</div>
+        <div class="contact-detail-value" style="font-size:17px;line-height:1.65">Tue–Fri &nbsp;10am – 6pm<br>Saturday &nbsp;9am – 4pm</div>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="footer-top">
-      <div><div class="footer-brand-name">Premier<span>.</span>Cuts</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
-      <div><div class="footer-col-title">Navigation</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li></ul></div>
+      <div><div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
+      <div><div class="footer-col-title">Navigate</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr</a></li></ul></div>
       <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a></div>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a></div>
     </div>
   </footer>
-</div>
+</div><!-- /book -->
 
-<!-- ═══════════════════════════════════════════════════════════
+<!-- ════════════════════════════════════════════
      CONTACT PAGE
-═══════════════════════════════════════════════════════════ -->
+════════════════════════════════════════════ -->
 <div id="contact" class="page">
 
-  <section class="contact-hero">
+  <section class="page-hero" style="background:var(--black)">
     <div class="label fade-in"><div class="label-line"></div><span class="label-text">Get In Touch</span></div>
     <h1 class="section-title fade-in">We're Here.<br><em>Reach Out.</em></h1>
   </section>
@@ -730,7 +851,7 @@
   <div class="contact-grid">
     <div class="contact-form-wrap">
       <div class="label fade-in"><div class="label-line"></div><span class="label-text">Send a Message</span></div>
-      <h2 style="font-family:var(--font-display);font-size:40px;font-weight:300;color:var(--white);margin-bottom:48px;letter-spacing:-0.01em" class="fade-in">We'll get back<br>to you <em>same day.</em></h2>
+      <h2 style="font-family:var(--font-display);font-size:clamp(30px,3.5vw,44px);font-weight:300;color:var(--white);margin-bottom:44px;letter-spacing:-0.01em;line-height:1.1" class="fade-in">We'll get back<br>to you <em>same day.</em></h2>
       <form id="contactForm">
         <div class="form-group">
           <label class="form-label">Full Name</label>
@@ -748,26 +869,26 @@
           <label class="form-label">Message</label>
           <textarea class="form-input" placeholder="Questions, special requests, group bookings..." required></textarea>
         </div>
-        <button type="submit" class="btn-outline" style="width:100%;justify-content:center;padding:18px;font-size:12px;margin-top:8px">
+        <button type="submit" class="btn-outline" style="width:100%;justify-content:center;padding:17px;font-size:11px;margin-top:8px;cursor:none">
           Send Message
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       </form>
     </div>
     <div class="contact-details-wrap">
-      <div class="contact-detail-group fade-in">
+      <div class="fade-in">
         <div class="contact-detail-title">Address</div>
         <div class="contact-detail-value">455 Chickamauga Dr<br>Dayton, TN 37321</div>
-        <a href="https://maps.google.com/?q=455+Chickamauga+Dr+Dayton+TN" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:16px;font-family:var(--font-ui);font-size:11px;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">
+        <a href="https://maps.google.com/?q=455+Chickamauga+Dr+Dayton+TN+37321" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-family:var(--font-ui);font-size:10px;letter-spacing:0.22em;text-transform:uppercase;color:var(--gold)">
           Get Directions
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
         </a>
       </div>
-      <div class="contact-detail-group fade-in">
+      <div class="fade-in stagger-1">
         <div class="contact-detail-title">Phone</div>
         <div class="contact-detail-value"><a href="tel:+14235670424">(423) 567-0424</a></div>
       </div>
-      <div class="contact-detail-group fade-in">
+      <div class="fade-in stagger-2">
         <div class="contact-detail-title">Hours</div>
         <div class="contact-hours-grid">
           <span class="hours-day">Monday</span><span class="hours-time hours-closed">Closed</span>
@@ -776,9 +897,9 @@
           <span class="hours-day">Sunday</span><span class="hours-time hours-closed">Closed</span>
         </div>
       </div>
-      <div class="contact-detail-group fade-in">
-        <div class="contact-detail-title">Follow</div>
-        <div style="display:flex;gap:12px;margin-top:4px">
+      <div class="fade-in stagger-3">
+        <div class="contact-detail-title">Follow Us</div>
+        <div style="display:flex;gap:12px;margin-top:8px">
           <a href="#" class="footer-social-link" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
           <a href="#" class="footer-social-link" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
           <a href="#" class="footer-social-link" aria-label="Google Reviews"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg></a>
@@ -787,29 +908,29 @@
     </div>
   </div>
 
-  <div class="map-frame" style="height:420px">
+  <div class="map-frame" style="height:400px">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3237.847!2d-85.00813!3d35.49219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88604189e27aedbe%3A0x3a060fbd8c6e68db!2s455%20Chickamauga%20Dr%2C%20Dayton%2C%20TN%2037321!5e0!3m2!1sen!2sus!4v1708000000000"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-      title="Premier Cuts Location Map"
-      style="width:100%;height:100%;border:none;filter:grayscale(80%) invert(90%) contrast(85%);opacity:0.6">
+      title="Premier Cuts Location"
+      style="width:100%;height:100%;border:none;filter:grayscale(85%) invert(90%) contrast(80%);opacity:0.55">
     </iframe>
   </div>
 
   <footer>
     <div class="footer-top">
-      <div><div class="footer-brand-name">Premier<span>.</span>Cuts</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
-      <div><div class="footer-col-title">Navigation</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li></ul></div>
+      <div><div class="footer-brand-name">PREMIER<span class="dot">.</span>CUTS</div><div class="footer-brand-tagline">Precision Cuts. Elevated Experience.</div></div>
+      <div><div class="footer-col-title">Navigate</div><ul class="footer-col-links"><li><a href="#home" data-page="home">Home</a></li><li><a href="#about" data-page="about">About</a></li><li><a href="#services" data-page="services">Services</a></li><li><a href="#gallery" data-page="gallery">Gallery</a></li></ul></div>
       <div><div class="footer-col-title">Contact</div><ul class="footer-col-links"><li><a href="tel:+14235670424">(423) 567-0424</a></li><li><a href="#">455 Chickamauga Dr</a></li></ul></div>
       <div><div class="footer-col-title">Hours</div><ul class="footer-col-links"><li><a href="#">Tue–Fri: 10am–6pm</a></li><li><a href="#">Saturday: 9am–4pm</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Premier Cuts Barbershop. Dayton, Tennessee.</span>
-      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener" class="footer-credit">Website by GVP</a></div>
+      <span class="footer-copy">© 2026 Premier Cuts Barbershop · Dayton, Tennessee</span>
+      <div class="footer-legal"><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a><a href="https://gshyamvp.com" target="_blank" rel="noopener">Website by GVP</a></div>
     </div>
   </footer>
-</div>
+</div><!-- /contact -->
 
 <script src="js/main.js"></script>
 </body>
