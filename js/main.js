@@ -1,61 +1,85 @@
-const cursor = document.querySelector('.cursor');
+/* ─────────────────────────────────────────
+   CUSTOM CURSOR
+───────────────────────────────────────── */
+const cursor     = document.querySelector('.cursor');
 const cursorRing = document.querySelector('.cursor-ring');
-let mouseX = 0, mouseY = 0;
-let ringX = 0, ringY = 0;
+let mouseX = 0, mouseY = 0, ringX = 0, ringY = 0;
 
-if (window.matchMedia('(hover: hover)').matches) {
+if (window.matchMedia('(hover: hover)').matches && cursor && cursorRing) {
   document.addEventListener('mousemove', e => {
     mouseX = e.clientX;
     mouseY = e.clientY;
     cursor.style.left = mouseX + 'px';
-    cursor.style.top = mouseY + 'px';
+    cursor.style.top  = mouseY + 'px';
   });
 
-  function animateRing() {
-    ringX += (mouseX - ringX) * 0.12;
-    ringY += (mouseY - ringY) * 0.12;
+  (function animateRing() {
+    ringX += (mouseX - ringX) * 0.11;
+    ringY += (mouseY - ringY) * 0.11;
     cursorRing.style.left = ringX + 'px';
-    cursorRing.style.top = ringY + 'px';
+    cursorRing.style.top  = ringY + 'px';
     requestAnimationFrame(animateRing);
-  }
-  animateRing();
+  })();
 
-  document.querySelectorAll('a, button, .team-card, .gallery-item, .gallery-full-item, .service-row').forEach(el => {
-    el.addEventListener('mouseenter', () => { cursor.classList.add('hover'); cursorRing.classList.add('hover'); });
-    el.addEventListener('mouseleave', () => { cursor.classList.remove('hover'); cursorRing.classList.remove('hover'); });
-  });
+  const hoverTargets = 'a, button, .team-card, .gallery-item, .gallery-full-item, .service-row, .faq-question, .book-option';
+  document.addEventListener('mouseenter', e => {
+    if (e.target.closest(hoverTargets)) {
+      cursor.classList.add('hover');
+      cursorRing.classList.add('hover');
+    }
+  }, true);
+  document.addEventListener('mouseleave', e => {
+    if (e.target.closest(hoverTargets)) {
+      cursor.classList.remove('hover');
+      cursorRing.classList.remove('hover');
+    }
+  }, true);
 } else {
-  cursor.style.display = 'none';
-  cursorRing.style.display = 'none';
+  if (cursor)     cursor.style.display = 'none';
+  if (cursorRing) cursorRing.style.display = 'none';
+  document.body.style.cursor = 'auto';
 }
 
-const nav = document.getElementById('mainNav');
+/* ─────────────────────────────────────────
+   NAV SCROLL
+───────────────────────────────────────── */
+const mainNav = document.getElementById('mainNav');
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 60);
+  mainNav.classList.toggle('scrolled', window.scrollY > 50);
+}, { passive: true });
+
+/* ─────────────────────────────────────────
+   MOBILE MENU
+───────────────────────────────────────── */
+const hamburger  = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+
+hamburger.addEventListener('click', () => {
+  const isOpen = mobileMenu.classList.toggle('open');
+  hamburger.classList.toggle('open', isOpen);
+  document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('open');
-  mobileMenu.classList.toggle('open');
-  document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-});
 mobileMenu.querySelectorAll('a').forEach(a => {
   a.addEventListener('click', () => {
-    hamburger.classList.remove('open');
     mobileMenu.classList.remove('open');
+    hamburger.classList.remove('open');
     document.body.style.overflow = '';
   });
 });
 
+/* ─────────────────────────────────────────
+   PAGE ROUTING (SPA hash)
+───────────────────────────────────────── */
 function showPage(pageId) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   const target = document.getElementById(pageId);
   if (target) {
     target.classList.add('active');
-    window.scrollTo(0, 0);
-    setTimeout(observeAnimations, 100);
+    window.scrollTo({ top: 0, behavior: 'instant' });
+    updateActiveNav(pageId);
+    setTimeout(observeAnimations, 80);
+    setTimeout(observeAnimations, 400); // second pass for delayed elements
   }
 }
 
@@ -70,45 +94,71 @@ document.querySelectorAll('[data-page]').forEach(el => {
 });
 
 window.addEventListener('popstate', e => {
-  const page = (e.state && e.state.page) || 'home';
-  showPage(page);
+  showPage((e.state && e.state.page) || 'home');
 });
 
-const hash = location.hash.replace('#', '') || 'home';
-showPage(hash);
+function updateActiveNav(pageId) {
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.classList.toggle('active', a.dataset.page === pageId);
+  });
+}
+
+const initPage = location.hash.replace('#', '') || 'home';
+showPage(initPage);
+
+/* ─────────────────────────────────────────
+   SCROLL ANIMATIONS
+───────────────────────────────────────── */
+let animationObserver;
 
 function observeAnimations() {
-  const observer = new IntersectionObserver(entries => {
+  if (animationObserver) animationObserver.disconnect();
+
+  animationObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
+        animationObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -32px 0px' });
 
-  document.querySelectorAll('.fade-in, .slide-left, .slide-right').forEach(el => {
-    observer.observe(el);
+  document.querySelectorAll('.fade-in:not(.visible), .slide-left:not(.visible), .slide-right:not(.visible)').forEach(el => {
+    animationObserver.observe(el);
   });
 }
-observeAnimations();
 
+/* ─────────────────────────────────────────
+   FAQ ACCORDION
+───────────────────────────────────────── */
+document.addEventListener('click', e => {
+  const q = e.target.closest('.faq-question');
+  if (!q) return;
+  const item = q.closest('.faq-item');
+  const isOpen = item.classList.contains('open');
+
+  // close all
+  document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+
+  // open clicked (unless it was already open)
+  if (!isOpen) item.classList.add('open');
+});
+
+/* ─────────────────────────────────────────
+   CONTACT FORM
+───────────────────────────────────────── */
 const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', e => {
     e.preventDefault();
-    const btn = contactForm.querySelector('button[type="submit"]');
-    const orig = btn.textContent;
-    btn.textContent = 'Message Sent —';
-    btn.style.background = '#1a4a2a';
-    btn.style.borderColor = '#1a4a2a';
-    btn.style.color = '#7dcc9a';
+    const btn  = contactForm.querySelector('button[type="submit"]');
+    const orig = btn.innerHTML;
+    btn.innerHTML = 'Message Sent ✓';
+    btn.style.cssText = 'background:#0d2e18;border-color:#0d2e18;color:#6dba8a;cursor:default';
     setTimeout(() => {
-      btn.textContent = orig;
-      btn.style.background = '';
-      btn.style.borderColor = '';
-      btn.style.color = '';
+      btn.innerHTML   = orig;
+      btn.style.cssText = '';
       contactForm.reset();
-    }, 3000);
+    }, 3200);
   });
 }
